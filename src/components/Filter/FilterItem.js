@@ -10,23 +10,15 @@ export const filterClasses = {
 };
 
 const FilterItem = ({ filter, isActive, onChangeFilter }) => {
-
   const onClickHandler = () => {
     onChangeFilter(filter);
-  }
+  };
 
-  return (
-    <div
-      className={`${classes["filter-item"]} ${
-        isActive && classes["active-filter"]
-      }`}
-      onClick={onClickHandler}
-    >
-      <div
-        className={`${classes["filter-content"]} ${filterClasses[filter]}`}
-      ></div>
-    </div>
-  );
+  const itemClasses = `${classes["filter-item"]} 
+                        ${filterClasses[filter]} 
+                        ${isActive && classes["active-filter"]}`;
+
+  return <div className={itemClasses} onClick={onClickHandler}></div>;
 };
 
 export default FilterItem;
