@@ -5,7 +5,7 @@ const initialState = {
   text: "",
 };
 
-const searchReducer = (state, action) => {
+const searchReducer = (state = initialState, action) => {
   switch (action.type) {
     case SET_SEARCH_IS_FOCUSED:
       return { ...state, isFocused: action.payload };
