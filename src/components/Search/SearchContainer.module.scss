@@ -1,0 +1,12 @@
+@import "sass/style";
+
+.search-container {
+  display: flex;
+  align-items: center;
+  color: $darkestGrayColor;
+
+  svg {
+    position: absolute;
+    margin-left: 5px;
+  }
+}
