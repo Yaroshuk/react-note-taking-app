@@ -1,5 +1,6 @@
 import HeaderCard from "../UI/HeaderCard";
 import FilterContainer from "../Filter/FilterContainer";
+import SearchContainer from "../Search/SearchContainer";
 
 import classes from "./Header.module.scss";
 
@@ -9,7 +10,9 @@ const Header = () => {
       <HeaderCard>
         <FilterContainer />
       </HeaderCard>
-      <HeaderCard>Second</HeaderCard>
+      <HeaderCard>
+        <SearchContainer />
+      </HeaderCard>
     </header>
   );
 };
