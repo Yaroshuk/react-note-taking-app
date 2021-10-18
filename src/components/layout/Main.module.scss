@@ -1,0 +1,8 @@
+@import "sass/style";
+
+main {
+  box-sizing: border-box;
+  min-height: calc(100vh - 70px);
+  background-color: $grayColor;
+  box-shadow: inset 0px 1px 10px 0px $grayColor;
+}

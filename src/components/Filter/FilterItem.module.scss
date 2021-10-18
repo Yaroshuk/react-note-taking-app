@@ -1,0 +1,39 @@
+@import "sass/style";
+
+.filter-item {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid $whiteColor;
+
+  &.active-filter {
+    border: 2px solid $darkestGrayColor;
+  }
+}
+
+.filter-content {
+  width: 90%;
+  height: 90%;
+  border-radius: 100%;
+}
+
+.none-filter {
+  background-color: $darkestGrayColor !important;
+}
+
+.orange-filter {
+  background-color: $orangeFilterColor !important;
+}
+
+.blue-filter {
+  background-color: $blueFilterColor !important;
+}
+
+.green-filter {
+  background-color: $greenFilterColor !important;
+}

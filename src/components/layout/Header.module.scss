@@ -1,0 +1,10 @@
+@import "sass/style";
+
+header {
+  display: flex;
+  box-sizing: border-box;
+  height: 70px; 
+  padding: 10px;
+  background-color: $whiteColor;
+  border-bottom: 1px solid $darkerGrayColor;
+}
