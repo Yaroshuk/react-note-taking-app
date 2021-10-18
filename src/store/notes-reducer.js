@@ -17,12 +17,12 @@ const DUMMY_NOTES = [
     colorFilter: COLOR_FILTER.green,
   },
   {
-    id: "n2",
+    id: "n3",
     text: "Anim amet ad culpa esse elit consectetur laboris anim do irure sit. Sit quis ad exercitation enim nulla aliquip amet nulla. Laborum in nisi est quis excepteur consequat.",
     colorFilter: COLOR_FILTER.blue,
   },
   {
-    id: "n2",
+    id: "n4",
     text: "Anim amet ad culpa esse elit consectetur laboris anim do irure sit. Sit quis ad exercitation enim nulla aliquip amet nulla. Laborum in nisi est quis excepteur consequat.",
     colorFilter: COLOR_FILTER.none,
   },

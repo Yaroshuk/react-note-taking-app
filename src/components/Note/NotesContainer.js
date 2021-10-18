@@ -3,6 +3,8 @@ import GridContainer from "../UI/GridContainer";
 import GridCard from "../UI/GridCard";
 import Note from "./Note";
 
+import { COLOR_FILTER } from "../../store/constants";
+
 import classes from "./NotesContainer.module.scss";
 
 const DUMMY_NOTES = [
@@ -21,14 +23,18 @@ const DUMMY_NOTES = [
 ];
 
 const NotesContainer = () => {
-  const notes = useSelector(state => state.notes)
+  const notes = useSelector(state => state.notes);
+  const activeFilter = useSelector(state => state.filter);
+  let filteredNotes = notes;
 
-  console.log(notes);
+  if (activeFilter !== COLOR_FILTER.none) {
+    filteredNotes = notes.filter(note => note.colorFilter === activeFilter);
+  }
 
   return (
     <section className={classes["notes-container"]}>
       <GridContainer>
-        {notes.map((note) => {
+        {filteredNotes.map((note) => {
           return (
             <GridCard key={note.id}>
               <Note id={note.id} text={note.text} colorFilter={note.colorFilter}/>
