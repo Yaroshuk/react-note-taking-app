@@ -23,12 +23,20 @@ const DUMMY_NOTES = [
 ];
 
 const NotesContainer = () => {
-  const notes = useSelector(state => state.notes);
-  const activeFilter = useSelector(state => state.filter);
+  const notes = useSelector((state) => state.notes);
+  const activeFilter = useSelector((state) => state.filter);
+  const searchText = useSelector((state) => state.search.text);
+
   let filteredNotes = notes;
 
   if (activeFilter !== COLOR_FILTER.none) {
-    filteredNotes = notes.filter(note => note.colorFilter === activeFilter);
+    filteredNotes = notes.filter((note) => note.colorFilter === activeFilter);
+  }
+
+  if (searchText.length) {
+    filteredNotes = filteredNotes.filter((note) =>
+      note.text.toUpperCase().includes(searchText.toUpperCase())
+    );
   }
 
   return (
@@ -37,7 +45,11 @@ const NotesContainer = () => {
         {filteredNotes.map((note) => {
           return (
             <GridCard key={note.id}>
-              <Note id={note.id} text={note.text} colorFilter={note.colorFilter}/>
+              <Note
+                id={note.id}
+                text={note.text}
+                colorFilter={note.colorFilter}
+              />
             </GridCard>
           );
         })}
