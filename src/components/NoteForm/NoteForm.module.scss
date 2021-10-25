@@ -7,7 +7,12 @@
   border-radius: 10px;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   align-items: center;
+
+  .note-filter {
+    @include note-filter;
+  }
 
   form {
     display: flex;
