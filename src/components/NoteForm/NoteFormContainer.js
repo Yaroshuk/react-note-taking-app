@@ -1,14 +1,17 @@
+import { Fragment } from "react";
+
 import NoteForm from "./NoteForm";
 
 import classes from "./NoteFormContainer.module.scss";
 
 const NoteFormContainer = () => {
   return (
-    <div className={classes["note-form-container"]}>
-      <div className={classes["container-background"]}>
+    <Fragment>
+      <div className={classes["note-form-background"]} />
+      <div className={classes["note-form-container"]}>
         <NoteForm />
       </div>
-    </div>
+    </Fragment>
   );
 };
 

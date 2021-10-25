@@ -4,10 +4,16 @@
   position: fixed;
   left: 0;
   top: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+}
 
-  .container-background {
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.37);
-  }
+.note-form-background {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.37); //TODO: color as a const
 }
