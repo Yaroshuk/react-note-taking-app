@@ -14,6 +14,9 @@ const NoteForm = () => {
       <div className={`${classes["note-filter"]} ${filterClasses[COLOR_FILTER.none]}`}/>
       <form>
         <textarea autoFocus placeholder={TEXTAREA_PLACEHOLDER} />
+        <div className={classes["note-form-filter"]}>
+          <FilterContainer />
+        </div>
         <div className={classes["note-form-control"]}>
           <Button title="cancel" action="cancel" />
           <Button title="save" type="sybmit" />

@@ -1,14 +1,16 @@
 @import "sass/style";
 
 .note-form {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  margin: 0 auto;
   background-color: $whiteColor;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+  @include note-shadow(#7e7f82);
 
   .note-filter {
     @include note-filter;
@@ -18,13 +20,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
+    margin: 20px 0;
   }
 
   textarea {
-    width: 200px;
+    width: 300px;
     height: 100px;
     resize: none;
+
     @include input-border;
+  }
+
+  .note-form-filter {
+    margin: 10px 0;
   }
 }

@@ -7,3 +7,7 @@
   width: 100%;
   height: 10px;
 }
+
+@mixin note-shadow($background: $darkerGrayColor) {
+  box-shadow: 0px 2px 10px $background;
+}
