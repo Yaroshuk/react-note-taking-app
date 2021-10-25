@@ -1,16 +1,15 @@
-import { Fragment } from 'react';
-import { createPortal } from 'react-dom';
+import { Fragment } from "react";
 
-import Header from './components/layout/Header';
-import Main from './components/layout/Main';
-import NoteFormContainer from './components/NoteForm/NoteFormContainer';
+import Header from "./components/layout/Header";
+import Main from "./components/layout/Main";
 
 function App() {
-  return <Fragment>
-    <Header />
-    <Main />
-    {createPortal(<NoteFormContainer />, document.getElementById("note-form-root"))}
-  </Fragment>
+  return (
+    <Fragment>
+      <Header />
+      <Main />
+    </Fragment>
+  );
 }
 
 export default App;

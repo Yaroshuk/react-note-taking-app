@@ -30,7 +30,7 @@
     height: 100px;
     resize: none;
 
-    @include input-border;
+    @include gray-border;
   }
 
   .note-form-filter {

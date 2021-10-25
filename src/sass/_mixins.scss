@@ -3,6 +3,16 @@
   border-radius: 5px;
 }
 
+@mixin gray-border($color: $darkestGrayColor) {
+  border: 1px solid $color;
+  border-radius: 5px;
+}
+
+@mixin note-border {
+  border-radius: 5px;
+  border: 1px solid $darkerGrayColor;
+}
+
 @mixin note-filter {
   width: 100%;
   height: 10px;

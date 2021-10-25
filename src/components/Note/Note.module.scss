@@ -4,10 +4,9 @@
   width: 300px;
   height: 110px;
   background-color: $whiteColor;
-  border-radius: 5px;
-  border: 1px solid $darkerGrayColor;
   overflow: hidden;
 
+  @include gray-border($darkerGrayColor);
   @include note-shadow;
 }
 

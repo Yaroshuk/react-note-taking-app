@@ -2,12 +2,17 @@
 
 .button {
   height: 40px;
-  width: 80px;
+  min-width: 80px;
   background-color: $buttonColor;
   border-radius: 5px;
   border: none;
   margin: 5px;
   color: $buttonTextColor;
+
+  svg {
+    margin-left: 10px;
+    font-size: 15px;
+  }
 }
 
 .cancel-button {
