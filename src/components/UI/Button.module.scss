@@ -1,0 +1,16 @@
+@import "sass/style";
+
+.button {
+  height: 40px;
+  width: 80px;
+  background-color: $buttonColor;
+  border-radius: 5px;
+  border: none;
+  margin: 5px;
+  color: $buttonTextColor;
+}
+
+.cancel-button {
+  background-color: $cancelButtonColor;
+  color: $cancelButtonTextColor;
+}
