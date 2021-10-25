@@ -3,6 +3,5 @@
 .search-input {
   height: 30px;
   padding-left: 24px;
-  border: 1px solid $darkestGrayColor;
-  border-radius: 5px;
+  @include input-border;
 }
